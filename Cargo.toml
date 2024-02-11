@@ -7,6 +7,10 @@ edition = "2021"
 name = "server"
 path = "src/server.rs"
 
+[[bin]]
+name = "client"
+path = "src/client.rs"
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
@@ -14,3 +18,4 @@ tokio-tungstenite = "*"
 tokio = { version = "1.36.0", features = ["full"] }
 futures-channel = "0.3"
 futures-util = "0.3"
+url = { version = "2.5.0" }
